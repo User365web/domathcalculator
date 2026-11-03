@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.domathcalculator.xubi.org/sitemap.xml
+Sitemap: https://YOUR-USERNAME.github.io/domathcalculator/sitemap.xml
