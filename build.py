@@ -6,12 +6,12 @@ import os, json, datetime
 
 # ============================ CONFIG ============================
 SITE_NAME     = "Domathcalculator"
-SITE_URL      = "https://YOUR-USERNAME.github.io/domathcalculator"   # no trailing slash. Custom domain: https://www.yourdomain.com
+SITE_URL      = "https://www.domathcalculator.xubi.org"   # no trailing slash; canonical public URL
 EMAIL         = "your-email@example.com"                              # shown on Contact / Privacy pages
 ADSENSE_ID    = ""      # e.g. "ca-pub-1234567890123456"  (leave empty until AdSense approves you)
 AD_SLOT       = ""      # optional ad unit id (digits). Empty = rely on AdSense Auto ads
 GOOGLE_VERIFY = ""      # content value of Search Console "HTML tag" verification (optional)
-CUSTOM_DOMAIN = ""      # e.g. "www.yourdomain.com" -> writes CNAME file
+CUSTOM_DOMAIN = "www.domathcalculator.xubi.org"  # GitHub Pages custom domain; writes CNAME file
 # ================================================================
 TAGLINE = "Free Scientific Calculator, Unit Converter & Engineering Tools"
 TODAY = datetime.date.today().isoformat()

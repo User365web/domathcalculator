@@ -10,11 +10,11 @@ Open http://localhost:8000 (or just double-click index.html).
 
 ## 2. Configure (once)
 Open `build.py`, edit the CONFIG block at the top:
-- SITE_URL  -> your final address, no trailing slash (e.g. https://yourname.github.io/domathcalculator or https://www.yourdomain.com)
+- SITE_URL  -> your final address, no trailing slash (e.g. https://www.domathcalculator.xubi.org)
 - EMAIL     -> your contact email
 - GOOGLE_VERIFY -> Search Console HTML-tag code (optional)
 - ADSENSE_ID / AD_SLOT -> fill in after AdSense approves you
-- CUSTOM_DOMAIN -> e.g. www.yourdomain.com (creates CNAME)
+- CUSTOM_DOMAIN -> www.domathcalculator.xubi.org (creates CNAME)
 Then run:  `python3 build.py`  (rewrites all pages, sitemap.xml, robots.txt, ads.txt).
 
 ## 3. Publish with Git + GitHub Pages
@@ -38,7 +38,7 @@ Then run:  `python3 build.py`  (rewrites all pages, sitemap.xml, robots.txt, ads
    so use a repo named YOUR-USERNAME.github.io or, better, a custom domain.
 
 ## 5. AdSense
-- AdSense generally requires a domain you own (not a free github.io subdomain). Buy a domain, set CUSTOM_DOMAIN + SITE_URL,
+- AdSense eligibility depends on the domain and program policies. This site is configured with the custom hostname; set CUSTOM_DOMAIN + SITE_URL if you change it,
   add DNS records per GitHub docs, enable "Enforce HTTPS".
 - Apply with the site live, with Privacy Policy, About and Contact pages (included). Add more original content/tools over time.
 - After approval set ADSENSE_ID (and optionally AD_SLOT), run build.py, push. ads.txt is generated automatically.
