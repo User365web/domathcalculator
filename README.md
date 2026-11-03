@@ -14,7 +14,7 @@ Open `build.py`, edit the CONFIG block at the top:
 - EMAIL     -> your contact email
 - GOOGLE_VERIFY -> Search Console HTML-tag code (optional)
 - ADSENSE_ID / AD_SLOT -> fill in after AdSense approves you
-- CUSTOM_DOMAIN -> www.domathcalculator.xubi.org (creates CNAME)
+- CUSTOM_DOMAIN -> e.g. www.yourdomain.com (creates CNAME)
 Then run:  `python3 build.py`  (rewrites all pages, sitemap.xml, robots.txt, ads.txt).
 
 ## 3. Publish with Git + GitHub Pages
@@ -38,8 +38,16 @@ Then run:  `python3 build.py`  (rewrites all pages, sitemap.xml, robots.txt, ads
    so use a repo named YOUR-USERNAME.github.io or, better, a custom domain.
 
 ## 5. AdSense
-- AdSense eligibility depends on the domain and program policies. This site is configured with the custom hostname; set CUSTOM_DOMAIN + SITE_URL if you change it,
+- AdSense generally requires a domain you own (not a free github.io subdomain). Buy a domain, set CUSTOM_DOMAIN + SITE_URL,
   add DNS records per GitHub docs, enable "Enforce HTTPS".
 - Apply with the site live, with Privacy Policy, About and Contact pages (included). Add more original content/tools over time.
 - After approval set ADSENSE_ID (and optionally AD_SLOT), run build.py, push. ads.txt is generated automatically.
 - Visitors in the EEA/UK need a consent banner (Google-certified CMP) - enable one in AdSense "Privacy & messaging".
+
+
+## Custom domain
+The production domain for this site is `https://www.domathcalculator.xubi.org`.
+The `CNAME` file contains `www.domathcalculator.xubi.org`. The build configuration
+uses this domain for canonical URLs, Open Graph metadata, the sitemap and robots.txt.
+After pushing changes, confirm that GitHub Pages has the custom domain configured
+and that your DNS provider points the `www` host to the GitHub Pages target.
